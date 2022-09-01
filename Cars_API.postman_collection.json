@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "c4d01a4c-8ab9-416c-a016-632a2e5916db",
+		"name": "Cars_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22654845"
+	},
+	"item": [
+		{
+			"name": "Get_All_Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Car_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Car",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"make\": \"Tesla\",\n    \"model\": \"Electric Car\",\n    \"year\": 2022,\n    \"price\": \"120000.00\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Car",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
